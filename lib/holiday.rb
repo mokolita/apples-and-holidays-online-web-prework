@@ -93,8 +93,10 @@ def all_holidays_with_bbq(holiday_hash)
   holidays_with_bbq = ""
   holiday_hash[:season][:holiday].collect do |holiday, item|
     if item == "BBQ" 
-      
-      
+      holidays_with_bbq = holiday 
+    end
+  end 
+  holidays_with_bbq
 
 end
 
